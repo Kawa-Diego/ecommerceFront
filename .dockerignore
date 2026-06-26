@@ -1,0 +1,71 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+out/
+.tmp/
+.cache/
+
+# Production Build Artifacts
+build
+dist
+.vite/
+.vitepress/
+.eslintcache
+.npm/
+coverage/
+jest/
+cypress/
+cypress/screenshots/
+cypress/videos/
+reports/
+
+# Docker Configurations
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and Editors
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Documentation
+README.md
+LICENSE
+
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+
+*.lock
