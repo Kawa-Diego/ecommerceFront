@@ -13,9 +13,9 @@ FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 5050
 
 CMD ["nginx", "-g", "daemon off;"]
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:5050/health || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:5050/ || exit 1
