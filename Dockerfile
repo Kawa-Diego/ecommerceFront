@@ -7,6 +7,7 @@ RUN npm ci
 
 COPY . .
 
+RUN npx playwright install
 RUN npm run build
 
 FROM nginx:alpine
