@@ -25,4 +25,4 @@ jobs:
     - run: npm run build --if-present
     - run: npm install -D @playwright/test
     - run: npx playwright install
-    - run: npm run test
+    - run: npx playwright test
